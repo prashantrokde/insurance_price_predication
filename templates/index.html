@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Insurance Price Prediction</title>
+</head>
+<body>
+    <h1>Medical Insurance Price Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="bmi">BMI:</label>
+        <input type="number" step="any" id="bmi" name="bmi" required><br><br>
+
+        <label for="smoker">Are you a smoker?</label>
+        <select id="smoker" name="smoker">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br><br>
+
+        <label for="region">Region:</label>
+        <select id="region" name="region">
+            <option value="southwest">Southwest</option>
+            <option value="southeast">Southeast</option>
+            <option value="northwest">Northwest</option>
+            <option value="northeast">Northeast</option>
+        </select><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
